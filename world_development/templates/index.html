@@ -1,0 +1,22 @@
+    <html>
+    <head>
+      <title>Home</title>
+    </head>
+    <body>
+        <div class="container">
+
+        <h1>country | <a href={{ url_for('search') }}>Search</a></h1>
+
+        {% for row in rows %}
+        <p>country: 
+           <b>{{row["id"]}}</b> | 
+           {{row["country_name"]}} | 
+           {{row["country_code"]}} | 
+           {{row["series_code"]}} | 
+           {{row['series_name']}}	
+           
+        </p>
+        {% endfor %}
+        </div>
+    </body>
+</html>
