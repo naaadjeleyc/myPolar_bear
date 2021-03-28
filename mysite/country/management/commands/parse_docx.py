@@ -15,7 +15,6 @@ class Command(BaseCommand):
     base_dir = Path(__file__).resolve().parent.parent.parent.parent
     docx_path = str(
         base_dir) + '/datasources/Data_Extract_From_World_Development_Indicators.xlsx'
-    # with open()
     df = pd.read_excel(str(docx_path), usecols=[
                        0, 1], sheet_name="Data", na_values=['NA'])
     country_name_col = df['Country Name']
