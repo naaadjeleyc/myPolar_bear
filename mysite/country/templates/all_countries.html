@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>All Countries And Its Country Code</title>
+</head>
+<body>
+    <h1>All Countries And Its Country Code</h1>
+
+    <table border="1">
+    <tr>
+        <th><b>Country Name:</b></th>
+        <th><b>Country Code:</b></th>
+    </tr>
+    
+    {% for country in countries %}
+        <tr>
+            <td>{{country.country_name}}</td>
+            <td>{{country.country_code}}</td>
+        </tr>
+    {% endfor %}
+</table>
+    
+</body>
+</html>
