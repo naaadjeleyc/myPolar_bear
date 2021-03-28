@@ -17,3 +17,13 @@ python3 -m pip install Django
 ```
 python3 manage.py runserver
 ```
+
+### using pandas to parse xlsx and write into sql 
+```
+pip3 install pandas
+```
+
+### run commands to parse xlsx and write data into sql
+```
+python3 manage.py parse_docx
+```
