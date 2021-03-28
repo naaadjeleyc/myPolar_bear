@@ -1,0 +1,23 @@
+<html>
+    <head>
+      <title>COUNTRY: Search</title>
+    </head>
+    <body>
+
+        <h1>Search</h1>
+        <form action="/search" method="post">
+            <p>ENTER COUNTRY CODE:</p>
+            <input type="number" name="f_id">
+            <input type="submit" value="Send">
+        </form>
+        {% if row != [] %}
+        <p>Country: 
+           <b>{{row["id"]}}</b> | 
+           {{row["country_name"]}} | 
+           {{row["country_code"]}} | 
+           {{row["series_code"]}} | 
+           {{row['series_name']}}
+        {% endif %}
+        </p>
+    </body>
+</html>
