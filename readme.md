@@ -25,5 +25,6 @@ pip3 install pandas
 
 ### run commands to parse xlsx and write data into sql
 ```
-python3 manage.py parse_docx
+python3 manage.py parse_docx  # deal with country data
+python3 manage.py parse_docx_series  # deal with series data
 ```

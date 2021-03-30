@@ -26,7 +26,8 @@ SECRET_KEY = '4a)z9_^*=if&ofiv)t4@2n7)3=j-%2hldi&9u$0#$#33@qs25&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['spark-viva-8000.codio-box.uk', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['spark-viva-8000.codio-box.uk', 'localhost',
+                 '127.0.0.1', 'countries-and-code-world.herokuapp.com']
 
 
 # Application definition
